@@ -25,4 +25,5 @@ python setup.py install
   - `plot.set_matplotlib_default`: Set default to latex fonts.
 
 - Progress bar:
+  - `utils.rebin`: Rebins binned data.
   - `utils.progress_bar`: Print's a changing progress bar to give visual updates of for-loop progression.
