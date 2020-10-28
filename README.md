@@ -21,6 +21,9 @@ python setup.py install
 
 ## Uses
 
+- Binning functions:
+  - `bins.rebin`: Rebins binned data.
+
 - File utility:
   - Functions for opening and outputting info on hdf5 files:
     - `files.get_hdf5_keys` to print the hdf5 keys and file structure.
@@ -32,5 +35,4 @@ python setup.py install
   - `plot.set_matplotlib_default`: Set default to latex fonts.
 
 - Progress bar:
-  - `utils.rebin`: Rebins binned data.
   - `utils.progress_bar`: Print's a changing progress bar to give visual updates of for-loop progression.
