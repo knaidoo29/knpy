@@ -4,9 +4,11 @@ Personal python utility functions.
 
 ## Dependencies
 
+- `python 3`
 - `numpy`
 - `matplotlib`
 - `healpy`
+- `h5py`
 
 ## Installation
 
@@ -18,6 +20,11 @@ python setup.py install
 ```
 
 ## Uses
+
+- File utility:
+  - Functions for opening and outputting info on hdf5 files:
+    - `files.get_hdf5_keys` to print the hdf5 keys and file structure.
+    - `files.get_hdf5_data` retrieves the data of interest which is specified by the hdf5 keys.
 
 - Plotting utility:
   - `plot.FigureSize`: Class for ensuring figures and colorbars are the correct size so that all size definitions (fonts, etc) have a definitive rather than relative meaning.
