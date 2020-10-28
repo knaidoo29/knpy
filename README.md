@@ -30,7 +30,7 @@ python setup.py install
     - `files.get_hdf5_data` retrieves the data of interest which is specified by the hdf5 keys.
 
 - Plotting utility:
-  - `plot.FigureSize`: Class for ensuring figures and colorbars are the correct size so that all size definitions (fonts, etc) have a definitive rather than relative meaning.
+  - `plot.FigureSize`: Class for ensuring figures and colorbars are the correct size so that all size definitions (fonts, etc) have a definitive rather than arbitrary meaning.
   - `plot.Healpy2Cartopy`: Converting Healpix map to 2D logitude and latitude grid. This allowing one to plot using `cartopy`'s transformation routines.
   - `plot.set_matplotlib_default`: Set default to latex fonts.
 
