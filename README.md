@@ -26,7 +26,7 @@ python setup.py install
   - `bins.rebin`: Rebins binned data.
 
 - File utility:
-  - `files.create_folder` to create a folder from python.
+  - `files.create_folder`: To create folders.
   - Functions for opening and outputting info on hdf5 files:
     - `files.get_hdf5_keys` to print the hdf5 keys and file structure.
     - `files.get_hdf5_data` retrieves the data of interest which is specified by the hdf5 keys.
