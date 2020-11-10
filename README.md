@@ -31,6 +31,9 @@ python setup.py install
     - `files.get_hdf5_keys` to print the hdf5 keys and file structure.
     - `files.get_hdf5_data` retrieves the data of interest which is specified by the hdf5 keys.
 
+- Gaussian Processes:
+  - `gp.GaussianProcesses`: Class wrapping `george`'s Gaussian Process fitting function for a 1D function.
+
 - Plotting utility:
   - `plot.FigureSize`: Class for ensuring figures and colorbars are the correct size so that all size definitions (fonts, etc) have a definitive rather than arbitrary meaning.
   - `plot.Healpy2Cartopy`: Converting Healpix map to 2D logitude and latitude grid. This allowing one to plot using `cartopy`'s transformation routines.
