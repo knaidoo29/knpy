@@ -23,7 +23,12 @@ python setup.py install
 ## Uses
 
 - Binning functions:
+  - `bins.bin_data`: Bins data.
+  - `bins.edges2centers`: Bin edges to centers.
+  - `bins.centers2edges`: Bin centers to edges.
   - `bins.rebin`: Rebins binned data.
+  - `bins.divide_1D`: Divide data along 1 axis.
+  - `bins.divide_ND`: Divide data along N axes.
 
 - File utility:
   - `files.create_folder`: To create folders.
@@ -41,3 +46,6 @@ python setup.py install
 
 - Progress bar:
   - `utils.progress_bar`: Print's a changing progress bar to give visual updates of for-loop progression.
+
+- Statistics:
+  - `stats.Jackknife`: A jackknife resampling class.
