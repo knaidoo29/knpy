@@ -1,5 +1,6 @@
 import numpy as np
 from scipy.optimize import minimize
+import george
 
 
 def neg_ln_like(p, y, gp):
