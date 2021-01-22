@@ -49,3 +49,4 @@ python setup.py install
 
 - Statistics:
   - `stats.Jackknife`: A jackknife resampling class.
+  - `stats.round_up`: Rounding a number to a given significant figure.

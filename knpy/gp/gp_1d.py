@@ -43,7 +43,8 @@ class GaussianProcesses:
         kernel *= np.var(self.y)
         self.gp = george.GP(kernel)
         self.gp.compute(self.x, self.yerr)
-        result = minimize(neg_ln_like, self.gp.get_parameter_vector(), jac=grad_neg_ln_like, args=(self.y, self.gp))
+        result = minimize(neg_ln_like, self.gp.get_parameter_vector(), jac=grad_neg_ln_like,
+                          args=(self.y, self.gp), bounds=((0, None), (0, None)))
         self.gp.set_parameter_vector(result.x)
         if verbose == True:
             print("\nFinal ln-likelihood: {0:.2f}".format(self.gp.log_likelihood(self.y)))
