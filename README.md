@@ -29,6 +29,7 @@ python setup.py install
   - `bins.rebin`: Rebins binned data.
   - `bins.divide_1D`: Divide data along 1 axis.
   - `bins.divide_ND`: Divide data along N axes.
+  - `bins.bin_by_index`: Bins data by index.
 
 - File utility:
   - `files.create_folder`: To create folders.
@@ -38,6 +39,13 @@ python setup.py install
 
 - Gaussian Processes:
   - `gp.GaussianProcesses`: Class wrapping `george`'s Gaussian Process fitting function for a 1D function.
+
+- Masking functions:
+  - `mask.get_binmask`: Returns a binary mask from a float mask.
+  - `mask.binmask2index`: Returns index in a binary mask.
+  - `mask.index2binmask`: Returns a binary mask from the mask index.
+  - `mask.remove_masked`: Removes areas of the data vector that are masked.
+  - `mask.fill_masked`: Fills in values outside of the mask.
 
 - Plotting utility:
   - `plot.FigureSize`: Class for ensuring figures and colorbars are the correct size so that all size definitions (fonts, etc) have a definitive rather than arbitrary meaning.
